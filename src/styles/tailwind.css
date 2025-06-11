@@ -13,6 +13,7 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
+
   *,
   ::after,
   ::before,
@@ -26,20 +27,21 @@
 
 
 @layer frequi {
+
   /* Customization for freqUI components */
   :root {
 
-    --p-primary-50: #DBFAFF;
-    --p-primary-100: #B8F4FF;
-    --p-primary-200: #75EAFF;
-    --p-primary-300: #2EE0FF;
-    --p-primary-400: #00C3E6;
-    --p-primary-500: #0089A1;
-    --p-primary-600: #006C80;
-    --p-primary-700: #005261;
-    --p-primary-800: #003842;
-    --p-primary-900: #001A1F;
-    --p-primary-950: #000D0F;
+    --p-primary-50: #e9e7fd;
+    --p-primary-100: #d1cfff;
+    --p-primary-200: #b0b3fa;
+    --p-primary-300: #8a8ee6;
+    --p-primary-400: #6a6edb;
+    --p-primary-500: #4b4fcf;
+    --p-primary-600: #3a3eb3;
+    --p-primary-700: #2c2e8f;
+    --p-primary-800: #23236b;
+    --p-primary-900: #18184a;
+    --p-primary-950: #10102e;
 
     --p-primary-color: var(--p-primary-600);
 
@@ -70,24 +72,25 @@
     /* --p-datatable-row-selected-background: var(--p-highlight-background); */
     /* --p-datatable-row-selected-color: var(--p-primary-contrast); */
 
-      /* --p-primary-color: var(--p-primary-500); */
+    /* --p-primary-color: var(--p-primary-500); */
   }
 
   .ft-dark-theme {
-      --p-content-background: var(--p-surface-950);
-      --p-menu-background: var(--p-surface-900);
+    --p-content-background: var(--p-surface-950);
+    --p-menu-background: var(--p-surface-900);
 
-      --p-primary-contrast-color: var(--p-text-200);
-      --p-button-secondary-background: var(--p-surface-700);
-      --p-button-secondary-hover-background: var(--p-surface-600);
+    --p-primary-contrast-color: var(--p-text-200);
+    --p-button-secondary-background: var(--p-surface-700);
+    --p-button-secondary-hover-background: var(--p-surface-600);
   }
 
   .p-button-icon-only.p-button-sm {
     --p-button-sm-icon-only-height: 2.25rem;
     /* height: var(--p-button-sm-icon-only-width); */
-    padding : 0.1rem 0.4rem 0.1rem 0.4rem;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
     /* padding: unset; */
   }
+
   .p-button-icon-only {
     /* padding : 0.1rem 0.4rem 0.1rem 0.4rem; */
     padding: unset;
@@ -97,6 +100,7 @@
   .p-selectbutton {
     border-color: var(--p-primary-500);
     border: 1px solid var(--p-primary-500);
+
     &>.p-togglebutton {
       border: none;
 
@@ -107,11 +111,12 @@
 
 
 @layer primevue {
-    /* Base component style overrides */
-    :root {
 
-        --p-datatable-row-background: unset;
-    }
+  /* Base component style overrides */
+  :root {
+
+    --p-datatable-row-background: unset;
+  }
 }
 
 
@@ -120,22 +125,21 @@ body.ft-theme-transition,
 body.ft-theme-transition *,
 body.ft-theme-transition *:before,
 body.ft-theme-transition *:after {
-    transition:
-        background 750ms ease-in-out,
-        border-color 750ms ease-in-out,
-        background-color 750ms ease-in-out,
-    ;
-    transition-delay: 0 !important;
+  transition:
+    background 750ms ease-in-out,
+    border-color 750ms ease-in-out,
+    background-color 750ms ease-in-out,
+  ;
+  transition-delay: 0 !important;
 }
 
 
 html {
-    /*  Set the default font size to 14px */
-    font-size: 14px;
+  /*  Set the default font size to 14px */
+  font-size: 14px;
 }
 
 .vue-grid-item {
-    /*  Fix white corners in vue-grid-item. */
-    background-color: unset !important;
+  /*  Fix white corners in vue-grid-item. */
+  background-color: unset !important;
 }
-
